@@ -21,22 +21,35 @@
         padding: 0;
         font-family: "AvenirNextLTW01-Regular";
         font-size: 18px;
-        color: #000;
+        line-height: 1.4;
+        color: #969696;
         background: #b4b4b4;
       }
       #content {
         margin: 0 auto;
         max-width: 480px;
+        height: 100vh;
+        background-color: #000;
       }
-      p {
-        padding-left: 1em;
-        padding-right: 1em;
+      ul {
+        list-style: none;
       }
-      @media (min-width: 480px) {
-        p {
-          padding-left: 0;
-          padding-right: 0;
-        }
+      ul, li {
+        padding-left: 0;
+        margin-left: 0;
+      }
+      li {
+        margin: 0 0 0.25em 1.25em;
+      }
+      a {
+        color: #969696;
+      }
+      a:hover,
+      a:focus {
+        color: #fff;
+      }
+      a:focus {
+        outline: 1px solid #fff;
       }
       img {
         display: block;
@@ -47,11 +60,11 @@
   <body>
     <div id="content">
       <img src="img/demotive.png" alt="Demotive. Toiling since 1975">
-      <p>
-        <a href="https://twitter.com/demotive">@demotive</a><br>
-        <a href="https://www.linkedin.com/in/demotive">linkedin</a>
-      </p>
-      <p>demotive(at)gmail.com</p>
+      <ul>
+        <li><a href="https://twitter.com/demotive">@demotive</a></li>
+        <li><a href="https://www.linkedin.com/in/demotive">linkedin</a></li>
+        <li>demotive(at)gmail(dot)com</li>
+      </ul>
     </div>
   </body>
 </html>
